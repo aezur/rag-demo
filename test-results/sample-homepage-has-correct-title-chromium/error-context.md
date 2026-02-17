@@ -1,0 +1,43 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - banner [ref=e3]: Convex + React
+  - main [ref=e4]:
+    - heading "Convex + React" [level=1] [ref=e5]
+    - generic [ref=e6]:
+      - paragraph [ref=e7]: Welcome Anonymous!
+      - paragraph [ref=e8]: Click the button below and open this page in another window - this data is persisted in the Convex cloud database!
+      - paragraph [ref=e9]:
+        - button "Add a random number" [ref=e10]
+      - paragraph [ref=e11]: "Numbers: 7, 7, 8, 1, 4, 2, 0, 0, 5, 8"
+      - paragraph [ref=e12]:
+        - text: Edit
+        - code [ref=e13]: convex/myFunctions.ts
+        - text: to change your backend
+      - paragraph [ref=e14]:
+        - text: Edit
+        - code [ref=e15]: src/App.tsx
+        - text: to change your frontend
+      - generic [ref=e16]:
+        - paragraph [ref=e17]: "Useful resources:"
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - link "Convex docs" [ref=e21] [cursor=pointer]:
+                - /url: https://docs.convex.dev/home
+              - paragraph [ref=e22]: Read comprehensive documentation for all Convex features.
+            - generic [ref=e23]:
+              - link "Stack articles" [ref=e24] [cursor=pointer]:
+                - /url: https://www.typescriptlang.org/docs/handbook/2/basic-types.html
+              - paragraph [ref=e25]: Learn about best practices, use cases, and more from a growing collection of articles, videos, and walkthroughs.
+          - generic [ref=e26]:
+            - generic [ref=e27]:
+              - link "Templates" [ref=e28] [cursor=pointer]:
+                - /url: https://www.convex.dev/templates
+              - paragraph [ref=e29]: Browse our collection of templates to get started quickly.
+            - generic [ref=e30]:
+              - link "Discord" [ref=e31] [cursor=pointer]:
+                - /url: https://www.convex.dev/community
+              - paragraph [ref=e32]: Join our developer community to ask questions, trade tips & tricks, and show off your projects.
+```
