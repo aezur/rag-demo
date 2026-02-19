@@ -1,13 +1,9 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
 
-// The schema is entirely optional.
-// You can delete this file (schema.ts) and the
-// app will continue to work.
-// The schema provides more precise TypeScript types.
 export default defineSchema({
   // Dialog data table: stores Star Wars dialog lines with embeddings and character info
-  dialog: defineTable({
+  starwars_dialog: defineTable({
     id: v.string(), // original line id from data
     character: v.string(),
     dialog: v.string(),
