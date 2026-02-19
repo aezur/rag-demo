@@ -26,3 +26,6 @@ dist-ssr
 # Test Output
 test-results
 test-results/*
+
+# Scripts Output
+scripts/**/output

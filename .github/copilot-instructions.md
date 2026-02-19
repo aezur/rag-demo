@@ -1,3 +1,12 @@
+## Agent Skill Usage
+
+- Before starting a new task, identify which skill(s) are relevant based on the task requirements and the skills' capabilities.
+- Use skills relevant to the folder or file type you are working in (e.g., use Convex-specific skills for files in `convex/`). Respect the `applyTo` patterns defined in the instruction files to ensure you are using the right skills for the right files.
+- Use the relevant skill(s) to gather information, generate code, or perform actions as needed for the task.
+- If multiple skills are relevant, consider using them in combination to achieve the best results (e.g., using a code generation skill to create a function and then a testing skill to write tests for it).
+- Always review and validate the output from the skills to ensure it meets the task requirements and adheres to the project's coding standards and guidelines.
+- Print to the console which skill(s) you are using for each task to maintain transparency and traceability in your workflow.
+
 ## Build / Run / Lint (repo root)
 
 - Install dependencies: `npm install`
