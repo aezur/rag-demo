@@ -1,40 +1,17 @@
-# Welcome to your Convex + React (Vite) app
+# Star Wars RAG-stack Demo
 
-This is a [Convex](https://convex.dev/) project created with [`npm create convex`](https://www.npmjs.com/package/create-convex).
+## Getting started
 
-After the initial setup (<2 minutes) you'll have a working full-stack app using:
+This repository includes the Star Wars dialog lines (located at `scripts/initialEmbed/data/*.txt`).
 
-- Convex as your backend (database, server logic)
-- [React](https://react.dev/) as your frontend (web page interactivity)
-- [Vite](https://vitest.dev/) for optimized web hosting
-- [Tailwind](https://tailwindcss.com/) for building great looking accessible UI
+To generate the embeddings, ensure a valid `OPENAI_API_KEY` is set in your environment (e.g., `export OPENAI_API_KEY=sk-...` on Unix, or `set OPENAI_API_KEY=sk-...` on Windows).
 
-## Get started
+Run:
 
-If you just cloned this codebase and didn't use `npm create convex`, run:
+- `npx tsx ./scripts/initialEmbed/parseAndSaveDialog.ts`
 
-```
-npm install
-npm run dev
-```
+Followed By:
 
-If you're reading this README on GitHub and want to use this template, run:
+- `npx tsx ./scripts/initialEmbed/embedDialog.ts <path-to-dialog-lines>.json`
 
-```
-npm create convex@latest -- -t react-vite
-```
-
-## Learn more
-
-To learn more about developing your project with Convex, check out:
-
-- The [Tour of Convex](https://docs.convex.dev/get-started) for a thorough introduction to Convex principles.
-- The rest of [Convex docs](https://docs.convex.dev/) to learn about all Convex features.
-- [Stack](https://stack.convex.dev/) for in-depth articles on advanced topics.
-
-## Join the community
-
-Join thousands of developers building full-stack apps with Convex:
-
-- Join the [Convex Discord community](https://convex.dev/community) to get help in real-time.
-- Follow [Convex on GitHub](https://github.com/get-convex/), star and contribute to the open-source implementation of Convex.
+**Note:** Dataset is <16k tokens and costs less than 1 cent.
