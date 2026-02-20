@@ -8,13 +8,27 @@
  * @module
  */
 
+import type * as common_schemas from "../common/schemas.js";
+import type * as common_utils from "../common/utils.js";
+import type * as http from "../http.js";
+import type * as semanticCache_schemas from "../semanticCache/schemas.js";
+import type * as starwarsDialog_mutations from "../starwarsDialog/mutations.js";
+import type * as starwarsDialog_schemas from "../starwarsDialog/schemas.js";
+
 import type {
   ApiFromModules,
   FilterApi,
   FunctionReference,
 } from "convex/server";
 
-declare const fullApi: ApiFromModules<{}>;
+declare const fullApi: ApiFromModules<{
+  "common/schemas": typeof common_schemas;
+  "common/utils": typeof common_utils;
+  http: typeof http;
+  "semanticCache/schemas": typeof semanticCache_schemas;
+  "starwarsDialog/mutations": typeof starwarsDialog_mutations;
+  "starwarsDialog/schemas": typeof starwarsDialog_schemas;
+}>;
 
 /**
  * A utility for referencing Convex functions in your app's public API.

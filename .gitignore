@@ -29,3 +29,4 @@ test-results/*
 
 # Scripts Output
 scripts/**/output
+config.bat

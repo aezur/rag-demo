@@ -13,6 +13,7 @@ applyTo: '**/scripts/**'
 - All scripts are standalone.
 - All scripts are command-line-runnable.
 - Scripts do not import from outside the parent folder.
+- Use global `fetch` (Node 22+) for HTTP requests; do not use node-fetch or other fetch polyfills.
 
 ## Testing
 
@@ -20,6 +21,7 @@ applyTo: '**/scripts/**'
 - Robust. Should be test exact implementation details.
   - Example: When testing a function failure, test against the function failing, not the output of the failure.
 - Test files use `vitest`.
+- For fetch mocking, see example in `openaiPrecheckUtil.test.ts` (use `global.fetch = vi.fn(...)`).
 
 ## Error-handling
 
